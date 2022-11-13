@@ -7,7 +7,7 @@ import Utils as ut
 
 def __main__(text) :
     text = ut.clear_corpus(text)
-
+    # Get response for the words input.
     responses = []
     for intent in data["intents"]:
         patterns = intent["patterns"]
@@ -18,6 +18,8 @@ def __main__(text) :
                     responses = intent['responses']
                     break
     if not responses: 
+        # Return empty array
         return responses
     else :
+        # Return the random response.
         return random.choices(responses)

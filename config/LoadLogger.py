@@ -19,7 +19,6 @@ logger.setLevel(logging.DEBUG)
 file_format = logging.Formatter('%(asctime)s - [%(levelname)s] - [%(threadName)s] - %(name)s - (%(filename)s).%(funcName)s(%(lineno)d) - %(message)s')
 
 # Create handlers
-# roll over after 5KB, and keep backup logs app.log.1, app.log.2 , etc.
 handler = TimedRotatingFileHandler(file_log, when='H', interval=1, backupCount=12)
 handler.setFormatter(file_format)
 logger.addHandler(handler)

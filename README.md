@@ -14,9 +14,8 @@ pip install -r requirements.txt
 ## Uso
 
 ```commandline
-Ejecutar SOLO la primera vez la clase NltkInstallLanguage para descargar ltk.download('all')
-python3 NltkInstallLanguage.py
+python Telegram.py
+```
 
-Para ejecutar el programa se debe ejecutar:
-
-python3 Telegram.py
+## Nota
+Actualmente se están generando las respuestas automáticas al canal público si se desea que el chabot creado genere las respuestas automáticas se debe cambiar la propiedad del archivo application.yaml **channel** por el del **chatId**.
