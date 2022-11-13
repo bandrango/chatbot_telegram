@@ -54,7 +54,24 @@
         "https://www.youtube.com/watch?v=4c7oFu36d6k&list=PLJjOveEiVE4Dk48EI7I-67PEleEC5nxc3",
         "https://www.youtube.com/watch?v=us90RPAECKo",
         "https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v",
-        "https://www.youtube.com/watch?v=V4ab6qsJZMY"
+        "https://www.youtube.com/watch?v=V4ab6qsJZMY",
+        "https://www.youtube.com/watch?v=NWONeJKn6kc",
+        "https://www.youtube.com/watch?v=GwIo3gDZCVQ",
+        "https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU",
+        "https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN",
+        "https://www.youtube.com/watch?v=lWGdFeMsjzg&list=PL05umP7R6ij35ShKLDqccJSDntugY4FQT",
+        "https://www.youtube.com/watch?v=vcE9WGbi4QY&list=PL2UML_KCiC0UlY7iCQDSiGDMovaupqc83",
+        "https://www.youtube.com/watch?v=GwIo3gDZCVQ&list=PL9ooVrP1hQOHUfd-g8GUpKI3hHOwM_9Dn",
+        "https://www.youtube.com/watch?v=rLOyrWV8gmA",
+        "https://www.youtube.com/watch?v=0lmQEo3NIJ4",
+        "https://www.youtube.com/watch?v=i_LwzRVP7bg",
+        "https://www.youtube.com/watch?v=HHqlEnoGk54&list=PLJjOveEiVE4Cbbx1dVjydfmPPpjl0pg86",
+        "https://www.youtube.com/watch?v=torhYoh10uU&list=PLyDzGuMm1rUE3tM8KjjoywR52r5GmA9bL",
+        "https://www.youtube.com/watch?v=FuIlgsbPr9E&list=PLISuMnTdVU-xNaAZM8H2oRGDlgxvHMCDJ",
+        "https://www.youtube.com/watch?v=KOVBu-jn3dQ&list=PLat2DtY8K7YVF2N_e5n48foCpcTJ2ZoLr",
+        "https://www.youtube.com/watch?v=wXVkIdF4D4I&list=PLA050nq-BHwMr0uk7pPJUqRgKRRGhdvKb",
+        "https://www.youtube.com/watch?v=mOCy5bq4AYw&list=PLUofJx5RUeFrAet3Y_eA0hBeYW50SZ4rZ",
+        "https://www.youtube.com/watch?v=FNWbigoQNOk&list=PLat2DtY8K7YWG4QxUruT1IB_sHumOr1Si"
       ]
     },
     {
@@ -67,7 +84,33 @@
       "responses": [
         "https://www.annualreviews.org/doi/abs/10.1146/annurev.cs.04.060190.002221?journalCode=arcompsci",
         "https://www.annualreviews.org/doi/abs/10.1146/annurev.cs.04.060190.001351?journalCode=arcompsci",
-        "https://murphylab.cbd.cmu.edu/presentations/Murphy-lecture1-principles-3pp.pdf"
+        "https://murphylab.cbd.cmu.edu/presentations/Murphy-lecture1-principles-3pp.pdf",
+        "https://books.google.com/books?id=JLEyDAAAQBAJ&printsec=frontcover&dq=machine+learning+free&hl=es-419&sa=X&ved=2ahUKEwjOi6CV8qv7AhU6UjABHTd3BIkQ6AF6BAgKEAI",
+        "https://books.google.com.ec/books?id=cXwwEAAAQBAJ&printsec=frontcover&dq=machine+learning+free&hl=es-419&sa=X&redir_esc=y#v=onepage&q=machine%20learning%20free&f=false",
+        "https://www.tutorialspoint.com/machine_learning/machine_learning_tutorial.pdf",
+        "https://alex.smola.org/drafts/thebook.pdf",
+        "https://www.datascienceassn.org/sites/default/files/Introduction%20to%20Machine%20Learning.pdf",
+        "https://unece.org/fileadmin/DAM/stats/documents/ece/ces/ge.50/2015/Topic3_Canada_paper.pdf",
+        "http://disp.ee.ntu.edu.tw/~pujols/Machine%20Learning%20Tutorial.pdf",
+        "https://python-course.eu/books/bernd_klein_python_and_machine_learning_a4.pdf",
+        "https://egrcc.github.io/docs/dl/deeplearningbook-ml.pdf",
+        "https://courses.edx.org/asset-v1:ColumbiaX+CSMM.101x+1T2017+type@asset+block@AI_edx_ml_5.1intro.pdf",
+        "https://arxiv.org/pdf/2201.01943",
+        "https://www.researchgate.net/profile/Gianluca-Pollastri/publication/344900141_DOME_Recommendations_for_supervised_machine_learning_validation_in_biology/links/5f980324a6fdccfd7b827892/DOME-Recommendations-for-supervised-machine-learning-validation-in-biology.pdf",
+        "https://www.researchgate.net/profile/Gary-Lackmann/publication/362967724_A_Machine_Learning_Tutorial_for_Operational_Meteorology_Part_I_Traditional_Machine_Learning/links/635bcfd08d4484154a41d30e/A-Machine-Learning-Tutorial-for-Operational-Meteorology-Part-I-Traditional-Machine-Learning.pdf",
+        "https://www.researchgate.net/profile/Gianluca-Pollastri/publication/344900141_DOME_Recommendations_for_supervised_machine_learning_validation_in_biology/links/5f980324a6fdccfd7b827892/DOME-Recommendations-for-supervised-machine-learning-validation-in-biology.pdf",
+        "https://www.researchgate.net/profile/Daniel-Kirk-14/publication/363887570_Machine_Learning_in_Nutrition_Research/links/6360e2e18d4484154a529650/Machine-Learning-in-Nutrition-Research.pdf",
+        "https://www.researchgate.net/publication/360012055_A_Machine_Learning_Tutorial_for_Operational_Meteorology_Part_I_Traditional_Machine_Learning/fulltext/625cf7109be52845a90ba6b3/A-Machine-Learning-Tutorial-for-Operational-Meteorology-Part-I-Traditional-Machine-Learning.pdf",
+        "https://www.researchgate.net/publication/364646628_Machine_Learning/fulltext/63550cba12cbac6a3ee97c11/Machine-Learning.pdf",
+        "https://www.researchgate.net/journal/Journal-of-Sensors-1687-7268/publication/365314139_Tiny_Machine_Learning_for_Resource-Constrained_Microcontrollers/links/636ee6c437878b3e87a310d5/Tiny-Machine-Learning-for-Resource-Constrained-Microcontrollers.pdf",
+        "https://www.researchgate.net/journal/Scientific-Reports-2045-2322/publication/365265049_Machine_learning_for_morbid_glomerular_hypertrophy/links/636c7c1f54eb5f547cbbcbf8/Machine-learning-for-morbid-glomerular-hypertrophy.pdf",
+        "https://www.researchgate.net/profile/Mostafizur-Rahman-Masum/publication/363055368_Data_Science_Machine_Learning/links/630c8251acd814437fe5897a/Data-Science-Machine-Learning"'
+        "https://www.researchgate.net/profile/Samira-Raki-2/publication/364950346_Machine_learning_in_digital_marketing_Machine_learning_in_digital_marketing/links/63602ad812cbac6a3e11c750/Machine-learning-in-digital-marketing-Machine-learning-in-digital-marketing.pdf",
+        "https://www.researchgate.net/profile/David-Okhakhu/publication/362697825_Machine_Learning_for_Sustainable_Development/links/6321d565071ea12e36326f2a/Machine-Learning-for-Sustainable-Development.pdf",
+        "https://www.researchgate.net/journal/Nature-Communications-2041-1723/publication/364389010_Technology_readiness_levels_for_machine_learning_systems/links/635208a196e83c26eb3bc22a/Technology-readiness-levels-for-machine-learning-systems.pdf",
+        "https://www.researchgate.net/profile/Geoffrey-Fox-2/publication/359785605_Scientific_machine_learning_benchmarks/links/627a513e973bbb29cc7216f8/Scientific-machine-learning-benchmarks.pdf",
+        "https://www.researchgate.net/profile/Kingsley-Ukoba/publication/365182608_Biochar_and_Application_of_Machine_Learning_A_Review/links/6368c988431b1f53007a7304/Biochar-and-Application-of-Machine-Learning-A-Review.pdf",
+        "https://www.researchgate.net/journal/Applied-Intelligence-1573-7497/publication/362666363_A_survey_on_machine_learning_in_array_databases/links/62f7060979550d6d1c78eaa1/A-survey-on-machine-learning-in-array-databases.pdf"
       ]
     },
     {
@@ -81,7 +124,26 @@
       "responses": [
         "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/",
         "https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/",
-        "https://www.udemy.com/course/machinelearning/"
+        "https://www.udemy.com/course/machinelearning/",
+        "https://www.udemy.com/course/curso-machine-learning/",
+        "https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/",
+        "https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/",
+        "https://www.udemy.com/course/data-science-and-machine-learning-with-python-hands-on/",
+        "https://www.udemy.com/course/machine-learning-course-with-python/",
+        "https://www.udemy.com/course/python-data-science-machine-learning-bootcamp/",
+        "https://www.udemy.com/course/natural-language-processing-in-python/",
+        "https://www.udemy.com/course/complete-data-science-and-machine-learning-using-python/",
+        "https://learndigital.withgoogle.com/activate/course/machine-learning-crash-course",
+        "https://www.edx.org/es/course/machine-learning-aprendizaje-automatico-con-python",
+        "https://www.edx.org/es/course/modelos-predictivos-con-machine-learning?index=spanish_product&queryID=3843ca9e305b8461cdcdfd8435e39eca&position=2",
+        "https://www.edx.org/es/course/introduccion-a-machine-learning?index=spanish_product&queryID=3843ca9e305b8461cdcdfd8435e39eca&position=3",
+        "https://www.edx.org/es/course/machine-learning-aprendizaje-automatico-con-python?index=spanish_product&queryID=3843ca9e305b8461cdcdfd8435e39eca&position=4",
+        "https://www.edx.org/course/machine-learning-practical-applications?filtered_tab=none&filtered_availability=none&filtered_level=none&filtered_language=none&filtered_partner=none&filtered_program_type=none&filtered_subject=none&search_term=machine+learning&utm_user-id=392501f2-13ac-4df1-94ca-6d395465eb58&test=conversionmode_2022-10-06&version=edx&plp=true",
+        "https://www.edx.org/course/machine-learning-in-business?filtered_tab=none&filtered_availability=none&filtered_level=none&filtered_language=none&filtered_partner=none&filtered_program_type=none&filtered_subject=none&search_term=machine+learning&utm_user-id=392501f2-13ac-4df1-94ca-6d395465eb58&test=conversionmode_2022-10-06&version=edx&plp=true",
+        "https://www.edx.org/course/artificial-intelligence-in-health-care?filtered_tab=none&filtered_availability=none&filtered_level=none&filtered_language=none&filtered_partner=none&filtered_program_type=none&filtered_subject=none&search_term=machine+learning&utm_user-id=392501f2-13ac-4df1-94ca-6d395465eb58&test=conversionmode_2022-10-06&version=edx&plp=true",
+        "https://www.edx.org/course/making-ai-work-machine-intelligence-for-business-and-society?filtered_tab=none&filtered_availability=none&filtered_level=none&filtered_language=none&filtered_partner=none&filtered_program_type=none&filtered_subject=none&search_term=machine+learning&utm_user-id=392501f2-13ac-4df1-94ca-6d395465eb58&test=conversionmode_2022-10-06&version=edx&plp=true",
+        "https://www.edx.org/es/professional-certificate/google-fundamentals-of-google-ai-for-web-based-machine-learning?index=spanish_product&queryID=f77485ce83130716319f7c01130f9cc2&position=2",
+        "https://aws.amazon.com/free/machine-learning/?trk=2a784a37-4b82-400e-9476-60dd4fd998f3&sc_channel=ps&s_kwcid=AL!4422!3!608524020150!p!!g!!machine%20learning&ef_id=Cj0KCQiAyMKbBhD1ARIsANs7rEF7oI4OGQG779FFyx3IVro7WhijwdacW5209-5OASPk2sAvEmB3IN4aAtlpEALw_wcB:G:s&s_kwcid=AL!4422!3!608524020150!p!!g!!machine%20learning"
       ]
     }
   ]
