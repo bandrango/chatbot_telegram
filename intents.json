@@ -1,87 +1,88 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "start",
-          "/start",
-          "inicio",
-          "Hola",
-          "Que tal",
-          "Que haces?",
-          "Hola que haces?",
-          "Hay alguien ahí?",
-          "Estas ahí?",
-          "Que más",
-          "Como vas?",
-          "Como te ha ido?",
-          "Hi",
-          "Hello"
-        ],
-        "responses": [
-          "Hola amigo!. Bievenido al ChatBot de difusión científica de Machine Learning.",
-          "Hola, bievenido al ChatBot de difusión científica de Machine Learning.",
-          "Hola, que estás haciendo? Bievenido al ChatBot de difusión científica de Machine Learning.",
-          "Bienvenido!. Este es el ChatBot de difusión científica de Machine Learning.",
-          "Como te puedo ayudar!. Este es el ChatBot de difusión científica de Machine Learning.",
-          "Como estás?. Este es el ChatBot de difusión científica de Machine Learning."
-        ],
-        "contex_set": ""
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "adios",
-          "chao",
-          "nos vemos",
-          "bye"
-        ],
-        "responses": [
-          "vuelve pronto!",
-          "cuídate",
-          "regresa cuando quieras!"
-        ]
-      },
-      {
-        "tag": "videos",
-        "patterns": [
-          "video", 
-          "youtube"
-        ],
-        "responses": [
-          "https://www.youtube.com/watch?v=7eh4d6sabA0",
-          "https://www.youtube.com/watch?v=4c7oFu36d6k&list=PLJjOveEiVE4Dk48EI7I-67PEleEC5nxc3",
-          "https://www.youtube.com/watch?v=us90RPAECKo",
-          "https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v",
-          "https://www.youtube.com/watch?v=V4ab6qsJZMY"
-        ]
-      },
-      {
-        "tag": "documentos",
-        "patterns": [
-          "documento",
-          "archivo",
-          "paper"
-        ],
-        "responses": [
-          "https://www.annualreviews.org/doi/abs/10.1146/annurev.cs.04.060190.002221?journalCode=arcompsci",
-          "https://www.annualreviews.org/doi/abs/10.1146/annurev.cs.04.060190.001351?journalCode=arcompsci",
-          "https://murphylab.cbd.cmu.edu/presentations/Murphy-lecture1-principles-3pp.pdf"
-        ]
-      },
-      {
-        "tag": "cursos",
-        "patterns": [
-          "tutorial",
-          "curso",
-          "capacitacion",
-          "capacitación"
-        ],
-        "responses": [
-          "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/",
-          "https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/",
-          "https://www.udemy.com/course/machinelearning/"
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "start",
+        "/start",
+        "inicio",
+        "Hola",
+        "Que tal",
+        "Que haces?",
+        "Hola que haces?",
+        "Hay alguien ahí?",
+        "Estas ahí?",
+        "Que más",
+        "Como vas?",
+        "Como te ha ido?",
+        "Hi",
+        "Hello"
+      ],
+      "responses": [
+        "Hola amigo!. Bievenido al ChatBot de difusión científica de Machine Learning.",
+        "Hola, bievenido al ChatBot de difusión científica de Machine Learning.",
+        "Hola, que estás haciendo? Bievenido al ChatBot de difusión científica de Machine Learning.",
+        "Bienvenido!. Este es el ChatBot de difusión científica de Machine Learning.",
+        "Como te puedo ayudar!. Este es el ChatBot de difusión científica de Machine Learning.",
+        "Como estás?. Este es el ChatBot de difusión científica de Machine Learning."
+      ],
+      "contex_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "adios",
+        "adiós",
+        "chao",
+        "nos vemos",
+        "bye"
+      ],
+      "responses": [
+        "vuelve pronto!",
+        "cuídate",
+        "regresa cuando quieras!"
+      ]
+    },
+    {
+      "tag": "videos",
+      "patterns": [
+        "video", 
+        "youtube"
+      ],
+      "responses": [
+        "https://www.youtube.com/watch?v=7eh4d6sabA0",
+        "https://www.youtube.com/watch?v=4c7oFu36d6k&list=PLJjOveEiVE4Dk48EI7I-67PEleEC5nxc3",
+        "https://www.youtube.com/watch?v=us90RPAECKo",
+        "https://www.youtube.com/watch?v=OGxgnH8y2NM&list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v",
+        "https://www.youtube.com/watch?v=V4ab6qsJZMY"
+      ]
+    },
+    {
+      "tag": "documentos",
+      "patterns": [
+        "documento",
+        "archivo",
+        "paper"
+      ],
+      "responses": [
+        "https://www.annualreviews.org/doi/abs/10.1146/annurev.cs.04.060190.002221?journalCode=arcompsci",
+        "https://www.annualreviews.org/doi/abs/10.1146/annurev.cs.04.060190.001351?journalCode=arcompsci",
+        "https://murphylab.cbd.cmu.edu/presentations/Murphy-lecture1-principles-3pp.pdf"
+      ]
+    },
+    {
+      "tag": "cursos",
+      "patterns": [
+        "tutorial",
+        "curso",
+        "capacitacion",
+        "capacitación"
+      ],
+      "responses": [
+        "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/",
+        "https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/",
+        "https://www.udemy.com/course/machinelearning/"
+      ]
+    }
+  ]
+}
