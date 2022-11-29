@@ -4,8 +4,10 @@ app:
     directory: logs/machineLearningInfo.log
   telegram:
     url: https://api.telegram.org/bot
+    #public_channel: -1001827881166 chatBotId: 5500282362
     chatId: 5500282362
     channel: -1001827881166
     token: 5709199445:AAF4FZ8jQrP68Sn_KYBur_buTPGmZoJF7vE
     sessionId: 24407630
     hash: 7fa7b757263a699ef5b56dcb2b2a0121
+    summary: True

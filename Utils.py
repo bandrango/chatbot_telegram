@@ -3,12 +3,15 @@ import string
 
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
+from unidecode import unidecode
 
 lemmer = nltk.stem.WordNetLemmatizer()
 ptemmer = PorterStemmer()
 
 # Clear the corpus
 def clear_corpus(text):
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    text = unidecode(text)
     text = nltk.word_tokenize(text)
     text = list(filter(lambda text: text not in string.punctuation, text))
     text = [ptemmer.stem(word.lower()) for word in text]
@@ -23,3 +26,11 @@ def LemTokens(tokens):
 def Normalize(text):
     remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
+
+# Pad for empty element on arrays
+def padlists(lsts, defvalue=None):
+    size = max(len(lst) for lst in lsts)
+    for lst in lsts:
+        if len(lst) < size:
+            lst.extend([defvalue] * (size - len(lst)))
+    return lsts

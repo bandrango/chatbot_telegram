@@ -12,3 +12,4 @@ SEND_MESSAGE = "sendMessage"
 CHAT_ID = conf['app']['telegram']['chatId']
 SESSION_ID = conf['app']['telegram']['sessionId']
 HASH = conf['app']['telegram']['hash']
+SUMMARY = conf['app']['telegram']['summary']

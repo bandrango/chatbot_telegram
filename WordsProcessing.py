@@ -12,3 +12,4 @@ def __main__(text):
             return wfd.__main__(text)[0]
     except Exception as e:
         log.logger.error(e)
+        raise
