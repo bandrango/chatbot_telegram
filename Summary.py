@@ -3,9 +3,11 @@ import Utils as ut
 import config.LoadLogger as log
 
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.metrics import ConfusionMatrix, precision, recall, f_measure, accuracy, jaccard_distance, binary_distance, masi_distance
 from collections import Counter
+from sklearn.feature_extraction.text import TfidfVectorizer   # For Tfid Vectorizer
+from sklearn.metrics.pairwise import cosine_similarity   # For cosine similarity
 
 def similarity_sentences(in_list_aux, ds_list_aux):
     # sw contains the list of stopwords
@@ -95,5 +97,38 @@ def ntlk_metrics(in_list, ds_list):
     log.logger.debug(f"  Jaccard distance: {round(jaccard_distance(reference_set, test_set), 2)}")
     log.logger.debug(f"     MASI distance: {round(masi_distance(reference_set, test_set), 2)}")
     log.logger.debug("-" * 75)
-    
+
     return  in_list, ds_list
+
+def cosine_similarity_senteneces(textAux, sent_tokens):
+    textAux = textAux
+    sent_tokensOrg = sent_tokens.copy()
+    stop_words = set(stopwords.words('spanish')).union(set(['http','www','san', '099','098','096','097']))
+    
+    # Appending the Question user ask to sent_tokens to find the Tf-Idf and cosine_similarity between User query and the content. 
+    sent_tokensOrg.append(textAux)
+    # Tokenizer ask about Pre-processing parameter and it will consume the Normalize() function and it will also remove StopWords
+    TfidfVec = TfidfVectorizer(tokenizer = ut.Normalize, stop_words=set(stop_words))    
+    tfidf = TfidfVec.fit_transform(sent_tokensOrg)
+
+    # It will do cosine_similarity between last vectors and all the vectors because last vector contain the User query
+    vals = cosine_similarity(tfidf[-1], tfidf, dense_output=True)  
+    log.logger.info(f'cosine similarity values: {vals}')   
+    # Argsort() will sort the tf_idf in ascending order. [-2] means second last index i.e. index of second highest value after sorting the cosine_similarity. 
+    # Index of last element is not taken as query is added at end and it will have the cosine_similarity with itself.
+    idx = vals.argsort()[0][-2]  
+
+    # [[0,...,0.89,1]] -> [0,...,0.89,1] this will make a single list of vals which had list inside a list.
+    flat = vals.flatten()   
+    flat.sort()
+    # this contains tfid value of second highest cosine similarity
+    req_tfidf = flat[-2]  
+    sentence = ''
+    if(req_tfidf == 0):  
+            sentence = ''
+    else:
+        # Return the sentences at index -2 as answer
+        sentence = sent_tokensOrg[idx]
+        log.logger.info(f'cosine similarity: {req_tfidf} the input text: {textAux} with the pattern: {sentence}')   
+
+    #print(f'cosine similarity: {req_tfidf} for textAux: {textAux} with the pattern: {sentence}')
