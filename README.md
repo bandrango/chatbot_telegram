@@ -11,6 +11,12 @@ pip -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Precarga de los lenguajes para NTLK
+
+```commandline
+NltkInstallLanguage.py
+```
+
 ## Uso
 
 ```commandline
