@@ -1,3 +1,10 @@
+"""
+This is the Logger configurations.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+"""
 import logging
 
 # import own libraries

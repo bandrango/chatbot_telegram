@@ -1,3 +1,10 @@
+"""
+This is the Contants configurations from application.yaml.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+"""
 # import own libraries
 import config.LoadFileConfig as cf
 

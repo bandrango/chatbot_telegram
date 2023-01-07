@@ -1,3 +1,10 @@
+"""
+This is the Telegram class, its the principal class.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+"""
 # import own libraries
 import Constants as constant
 import config.LoadLogger as log

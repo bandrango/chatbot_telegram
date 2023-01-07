@@ -1,3 +1,15 @@
+"""
+This is the Summary class.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+
+Codigo fuente basado de:
+https://gist.github.com/4OH4/f727af7dfc0e6bb0f26d2ea41d89ee55
+https://www.kaggle.com/code/uthamkanth/beginner-tf-idf-and-cosine-similarity-from-scratch
+
+"""
 import numpy as np
 import Utils as ut
 import config.LoadLogger as log

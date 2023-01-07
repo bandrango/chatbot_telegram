@@ -1,3 +1,15 @@
+"""
+This is the WordsFromStaticText class.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+
+Codigo fuente basado de:
+https://gist.github.com/4OH4/f727af7dfc0e6bb0f26d2ea41d89ee55
+https://www.kaggle.com/code/uthamkanth/beginner-tf-idf-and-cosine-similarity-from-scratch
+
+"""
 import nltk
 import warnings
 warnings.filterwarnings("ignore")

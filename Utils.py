@@ -1,3 +1,10 @@
+"""
+This is the Utils class.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+"""
 import nltk
 import string
 

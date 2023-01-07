@@ -1,3 +1,10 @@
+"""
+This is the WordsFromDataset class.
+
+@autor: Byron Andrango
+@since: 2023 - Jan
+@version: 1.0
+"""
 import random
 import json
 import Summary as summary
@@ -26,18 +33,12 @@ def __main__(text) :
             for w in text:
                 if w in tokens :
                     res = random.choices(intent['responses'])
-                    #print(f'--> text: {text}, w: {w}, res: {res}')
                     responses.append(res)
-                    #break
     if not responses: 
         # Return empty array
        return responses
     else :
-        #joined_string = ",".join(responses)
         joined_string = '\n\n'.join(' '.join(l) for l in responses)
-        #print(f'joined_string: {joined_string}')
 
         # Return the random response.
         return joined_string
-#print(__main__('Hola, por favor me puedes ayudar con videos, papers y cursos sobre machine learning'))
-#print(__main__('Hola, por favor me puedesa ayudar con información sobre machine leaning'))
