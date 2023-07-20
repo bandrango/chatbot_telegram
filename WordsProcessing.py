@@ -2,34 +2,26 @@ import config.LoadLogger as log
 import WordsFromDataset as wfd
 import WordsFromStaticText as wfs
 
-def __main__(text):
+def process_message(text):
     try:
-        # Retrieves information from the dataset with random greeting responses among others.
-        #response = []
-        #response = wfd.__main__(text)
-        #response.append(wfs.__main__(text))
-        
         flag = 0
         message = ''
-        message = message + wfd.__main__(text)
+
+        # Obtiene información relevante del conjunto de datos
+        log.logger.debug('****1')
+        message += wfd.process_input(text)
+        log.logger.debug('1')
+        log.logger.info(f'message: {message}')
+
+        # Verifica si se encontró información relevante en el conjunto de datos
         if message:
             flag = 1
-        #print(f'flag: {flag}')
-        message =  message + '\n\n' + wfs.__main__(text, flag)
 
-        
-    #print(response)
+        # Obtiene información adicional de texto estático
+        log.logger.debug('1.1')
+        message += '\n\n' + wfs.process_input(text, flag)
+
         return message
-        #if not wfd.__main__(text) :
-        #    return wfs.__main__(text)
-        #else :
-            # Retrieves information about machine learning.
-        #    return wfd.__main__(text)[0]
     except Exception as e:
         log.logger.error(e)
         raise
-
-#print(__main__('Hola, por favor me puedes ayudar con videos, papers y cursos sobre machine learning'))
-#print(__main__('Hola, por favor me puedesa ayudar con información sobre machine leaning'))
-#print(__main__('informacion de Big Data'))
-#print(__main__('XXX'))

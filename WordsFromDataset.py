@@ -8,7 +8,7 @@ with open('intents.json') as file:
 # import own libraries
 import Utils as ut
 
-def __main__(text) :
+def process_input(text) :
     textOrig = text
     text = ut.clear_corpus(text)
     # Get response for the words input.
@@ -31,7 +31,7 @@ def __main__(text) :
                     #break
     if not responses: 
         # Return empty array
-       return responses
+       return '\n\n'.join(' '.join(l) for l in responses)
     else :
         #joined_string = ",".join(responses)
         joined_string = '\n\n'.join(' '.join(l) for l in responses)

@@ -2,25 +2,25 @@
 
 ## Requerimientos
 
-- Python = 3.10
+- Python >= 3.9.6
 
 ## Instalación
 
 ```commandline
-pip -m pip install --upgrade pip
-pip install -r requirements.txt
+python3 -m pip install --upgrade pip
+python3 -m pip  install -r requirements.txt
 ```
 
 Precarga de los lenguajes para NTLK
 
 ```commandline
-NltkInstallLanguage.py
+python3 NltkInstallLanguage.py
 ```
 
 ## Uso
 
 ```commandline
-python Telegram.py
+python3 Telegram.py
 ```
 
 ## Nota

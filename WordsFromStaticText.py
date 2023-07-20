@@ -12,17 +12,17 @@ from nltk.corpus import stopwords
 f = open('content.txt','r',errors = 'ignore', encoding = 'utf-8')
 paragraph = f.read()
 
-def __main__(text, flag):
+def process_input(text, flag):
     response = ''
     str_not_found = "Lo siento! No puedo entender lo que escribiste. Para interactuar con el ChatBot puedes ingresar: cursos, tutoriales, videos, papers, entre otros."
-    stop_words = set(stopwords.words('spanish')).union(set(['http','www','san', '099','098','096','097']))
+    stop_words = set(stopwords.words('spanish')).union(list(['http','www','san', '099','098','096','097']))
     
     sent_tokens = nltk.sent_tokenize(paragraph)
    
     # Appending the Question user ask to sent_tokens to find the Tf-Idf and cosine_similarity between User query and the content. 
     sent_tokens.append(text)
     # Tokenizer ask about Pre-processing parameter and it will consume the Normalize() function and it will also remove StopWords
-    TfidfVec = TfidfVectorizer(tokenizer = ut.Normalize, stop_words=set(stop_words))    
+    TfidfVec = TfidfVectorizer(tokenizer = ut.normalize, stop_words=list(stop_words))    
     tfidf = TfidfVec.fit_transform(sent_tokens)
 
     # It will do cosine_similarity between last vectors and all the vectors because last vector contain the User query
@@ -38,11 +38,17 @@ def __main__(text, flag):
     # this contains tfid value of second highest cosine similarity
     req_tfidf = flat[-2]  
     log.logger.info(f'cosine similarity: {req_tfidf}')
+    log.logger.info(f'text: {text}')
+    log.logger.info(f'flag: {flag}')
 
     if(req_tfidf == 0):  
+        log.logger.info(f'req_tfidf: {req_tfidf}')
         # 0 means there is no similarity between the question and answer  
+        log.logger.info(f'flag**: {flag}')
         if flag == 0:
+            log.logger.info(f'flag: {flag}')
             response = str_not_found
+            log.logger.info(f'response: {response}')
         else:
             response = ''
     else:

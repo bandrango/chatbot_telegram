@@ -2,35 +2,84 @@ import nltk
 import string
 
 from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
 from nltk.stem.porter import PorterStemmer
 from unidecode import unidecode
 
-lemmer = nltk.stem.WordNetLemmatizer()
-ptemmer = PorterStemmer()
+# Inicialización de stemmer y lemmatizer
+stemmer = PorterStemmer()
+lemmatizer = WordNetLemmatizer()
 
-# Clear the corpus
 def clear_corpus(text):
+    """
+    Limpia el texto del corpus aplicando diferentes transformaciones y devolviendo una lista de tokens.
+    
+    Args:
+        text (str): Texto del corpus a limpiar.
+        
+    Returns:
+        list: Lista de tokens limpios.
+    """
+    # Eliminar puntuación
     text = text.translate(str.maketrans('', '', string.punctuation))
+
+    # Remover caracteres acentuados
     text = unidecode(text)
-    text = nltk.word_tokenize(text)
-    text = list(filter(lambda text: text not in string.punctuation, text))
-    text = [ptemmer.stem(word.lower()) for word in text]
-    return text
 
-# Apply WordNetLemmatizer to the text.
-def LemTokens(tokens):
-    lemmer = nltk.stem.WordNetLemmatizer()
-    return [lemmer.lemmatize(token) for token in tokens] 
+    # Tokenizar el texto
+    tokens = word_tokenize(text)
 
-# Apply word_tokenize to the text.
-def Normalize(text):
+    # Filtrar palabras que son solo puntuación
+    tokens = [token for token in tokens if token not in string.punctuation]
+
+    # Aplicar stemming
+    tokens = [stemmer.stem(token.lower()) for token in tokens]
+
+    return tokens
+
+def lemmatize_tokens(tokens):
+    """
+    Aplica lematización a una lista de tokens.
+    
+    Args:
+        tokens (list): Lista de tokens a lematizar.
+        
+    Returns:
+        list: Lista de tokens lematizados.
+    """
+    return [lemmatizer.lemmatize(token) for token in tokens]
+
+def normalize(text):
+    """
+    Normaliza el texto aplicando diferentes transformaciones y devolviendo una lista de tokens lematizados.
+    
+    Args:
+        text (str): Texto a normalizar.
+        
+    Returns:
+        list: Lista de tokens lematizados.
+    """
+    # Eliminar puntuación y convertir a minúsculas
     remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
-    return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
+    normalized_text = text.lower().translate(remove_punct_dict)
 
-# Pad for empty element on arrays
-def padlists(lsts, defvalue=None):
-    size = max(len(lst) for lst in lsts)
-    for lst in lsts:
-        if len(lst) < size:
-            lst.extend([defvalue] * (size - len(lst)))
-    return lsts
+    # Tokenizar y lematizar
+    tokens = word_tokenize(normalized_text)
+    lemmatized_tokens = lemmatize_tokens(tokens)
+
+    return lemmatized_tokens
+
+def pad_lists(lists, default_value=None):
+    """
+    Rellena una lista de listas con un valor por defecto para que todas las sublistas tengan la misma longitud.
+    
+    Args:
+        lists (list): Lista de listas a rellenar.
+        default_value (any, optional): Valor por defecto para rellenar las sublistas. Por defecto es None.
+        
+    Returns:
+        list: Lista de listas rellenas con la misma longitud.
+    """
+    max_length = max(len(lst) for lst in lists)
+    padded_lists = [lst + [default_value] * (max_length - len(lst)) for lst in lists]
+    return padded_lists

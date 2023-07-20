@@ -4,12 +4,14 @@ import config.LoadFileConfig as cf
 # load configurations:
 conf = cf.loadConfig()
 
-# define variable:
-TOKEN = conf['app']['telegram']['token']
-URL = conf['app']['telegram']['url']
-CHANNEL_ID = conf['app']['telegram']['channel']
+# define variables:
+telegram_config = conf['app']['telegram']
+
+TOKEN = telegram_config['token']
+URL = telegram_config['url']
+CHANNEL_ID = telegram_config['channel']
 SEND_MESSAGE = "sendMessage"
-CHAT_ID = conf['app']['telegram']['chatId']
-SESSION_ID = conf['app']['telegram']['sessionId']
-HASH = conf['app']['telegram']['hash']
-SUMMARY = conf['app']['telegram']['summary']
+CHAT_ID = telegram_config['chatId']
+SESSION_ID = telegram_config['sessionId']
+HASH = telegram_config['hash']
+SUMMARY = telegram_config['summary']
